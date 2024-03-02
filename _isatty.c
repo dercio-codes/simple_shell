@@ -6,8 +6,8 @@
 
 void _isatty(void)
 {
-  if (isatty(STDIN_FILENO))
-    {
-      _puts("#cisfun$ ");
-    }
+if (isatty(STDIN_FILENO))
+{
+_puts("#cisfun$ ");
+}
 }
