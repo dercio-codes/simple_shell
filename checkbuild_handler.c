@@ -5,27 +5,6 @@
  * @args: array of arguments
  * Return: pointer to function that takes args and returns void
  */
- 
-/**
- * struct builtins - Structure for defining built-in shell commands
- * @name: name of the built-in command
- * @func: pointer to function that executes the command
- *
- * This struct is used to define the built-in commands for a shell program.
- * It contains the name of the command and a pointer to the function
- * that executes the command.
-*/
-struct builtins
-{
-char *name;
-void (*func)(char **args);
-} builtins[] = {
-{"exit", exit_shell},
-{"env", env},
-{"setenv", _setenv},
-{"unsetenv", _unsetenv},
-{NULL, NULL}
-};
 
 void (*checkbuild(char **args))(char **args)
 {
